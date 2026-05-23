@@ -39,8 +39,13 @@ module tb_aes_top;
     integer tests_failed = 0;
 
     initial begin
-        $dumpfile("tb_aes_top.vcd");
-        $dumpvars(0, tb_aes_top);
+        `ifdef VCS
+            $fsdbDumpfile("tb_aes_top.fsdb");
+            $fsdbDumpvars(0, tb_aes_top);
+        `else
+            $dumpfile("tb_aes_top.vcd");
+            $dumpvars(0, tb_aes_top);
+        `endif
 
         $display("==================================================");
         $display("       Starting AES-128 Compact Core Testbench    ");
