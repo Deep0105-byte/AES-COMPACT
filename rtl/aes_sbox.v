@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 /*
  * AES S-Box and Inverse S-Box module
  * Fully combinational, lookup-table based, efficient for FPGA synthesis.

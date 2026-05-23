@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 /*
  * AES-128 Top-Level Wrapper
  * Registers all inputs and outputs to isolate the core from external I/O timing paths.

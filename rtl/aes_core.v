@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 /*
  * AES-128 Core (Encryption and Decryption)
  * Single-round iterative datapath.

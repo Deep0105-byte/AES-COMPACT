@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 /*
  * AES MixColumns and InvMixColumns module
  * Fully combinational, processes all four columns (128-bit) in parallel.

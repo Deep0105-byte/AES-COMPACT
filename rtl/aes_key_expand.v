@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 /*
  * AES-128 Bidirectional Key Expander
  * Generates round keys on the fly.
