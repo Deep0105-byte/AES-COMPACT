@@ -47,8 +47,8 @@ set clk_period 10.0
 create_clock -name clk -period $clk_period [get_ports $clk_port]
 
 # Constrain input and output delays (assumes 20% delay external to core)
-set_input_delay  -clock clk 2.0 [all_inputs -no_clocks]
-set_output_delay -clock clk 2.0 [all_outputs -no_clocks]
+set_input_delay  -clock clk 2.0 [remove_from_collection [all_inputs] [get_ports clk]]
+set_output_delay -clock clk 2.0 [all_outputs]
 
 # Set operating conditions and wire load models (optional, vendor dependent)
 # set_db operating_conditions "typical"
